@@ -1,27 +1,39 @@
 {
     "movies": [
         {
-            "id": "tmdb598",
+            "year": "2002",
             "rt": 91,
-            "cineselectRating": 9511,
-            "imdbRating": 8.6,
+            "id": "tmdb598",
             "type": "movie",
-            "imdb": "tt0317248",
             "title": "City of God",
             "poster": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
-            "year": "2002"
+            "imdbRating": 8.6,
+            "imdb": "tt0317248",
+            "cineselectRating": 9511
         },
         {
-            "id": "tmdb141",
+            "year": "2001",
             "rt": 88,
-            "cineselectRating": 141,
-            "imdbRating": 8.0,
+            "id": "tmdb141",
             "type": "movie",
-            "imdb": "tt0246578",
             "title": "Donnie Darko",
             "poster": "https://image.tmdb.org/t/p/w500/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg",
-            "year": "2001"
+            "imdbRating": 8.0,
+            "imdb": "tt0246578",
+            "cineselectRating": 141
         }
     ],
-    "series": []
+    "series": [
+        {
+            "year": "2022",
+            "rt": 0,
+            "title": "The Sandman",
+            "type": "show",
+            "id": "tmdb90802",
+            "poster": "https://image.tmdb.org/t/p/w500/vfJ1nBnqiiRWZWv3ZvtFWO5zccg.jpg",
+            "imdbRating": 7.7,
+            "imdb": "tt1751634",
+            "cineselectRating": 5000
+        }
+    ]
 }
