@@ -42,7 +42,7 @@ function yearsToSortOptions(yearsArr) {
 
 const manifest = {
   id: "community.serkanswatchagain",
-  version: "1.0.0",
+  version: "1.0.1",
   name: "Serkan'ın izlenecek film ve diziler listesi",
   description: `🎯 İzlenmeye değer olduğu düşünülen filmler ve diziler burada!! 
 `,
