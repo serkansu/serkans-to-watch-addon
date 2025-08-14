@@ -2,6 +2,21 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 const fs = require("fs");
 const path = require("path");
 
+// YALNIZCA BU REPODAKI (yerel) favorites.json okunur; baska repodan veri cekilmez.
+// favorites.json verilerini oku
+let movieList = [];
+let seriesList = [];
+try {
+  const data = fs.readFileSync(path.join(__dirname, "favorites.json"), "utf8");
+  const parsed = JSON.parse(data);
+  movieList = parsed.movies || [];
+  seriesList = parsed.series || [];
+  console.log(`🎬 ${movieList.length} movies, 📺 ${seriesList.length} series loaded.`);
+  console.log("📄 favorites.json source dir:", __dirname);
+} catch (err) {
+  console.error("favorites.json okunamadı:", err);
+}
+
 // Helper functions to extract years and build extras
 function getYears(list) {
   // Extract all years, filter out invalid, unique, sorted desc
@@ -19,19 +34,6 @@ const sortFieldOptions = ["Default","CineSelect","IMDb","RottenTomatoes","Year",
 const sortOrderOptions = ["Descending","Ascending"];
 
 
-// favorites.json verilerini oku
-let movieList = [];
-let seriesList = [];
-try {
-  const data = fs.readFileSync(path.join(__dirname, "favorites.json"), "utf8");
-  const parsed = JSON.parse(data);
-  movieList = parsed.movies || [];
-  seriesList = parsed.series || [];
-  console.log(`🎬 ${movieList.length} movies, 📺 ${seriesList.length} series loaded.`);
-} catch (err) {
-  console.error("favorites.json okunamadı:", err);
-}
-
 // Build dynamic extras for years
 const movieYears = getYears(movieList);
 const seriesYears = getYears(seriesList);
@@ -46,7 +48,7 @@ const manifest = {
   name: "Serkan'ın izlenecek film ve diziler listesi",
   description: `🎯 İzlenmeye değer olduğu düşünülen filmler ve diziler burada!! 
 `,
-  logo: "https://raw.githubusercontent.com/serkansu/cineselect-addon/main/cineselect-logo.png",
+  logo: "https://raw.githubusercontent.com/serkansu/serkans-to-watch-addon/main/cineselect-logo.png",
   resources: ["catalog"],
   types: ["movie", "series"],
   catalogs: [
