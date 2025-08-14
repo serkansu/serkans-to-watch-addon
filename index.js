@@ -43,8 +43,9 @@ function yearsToSortOptions(yearsArr) {
 const manifest = {
   id: "community.serkanswatchagain",
   version: "1.0.0",
-  name: "Serkan's Watch Again Movies & Series",
-  description: "A handpicked library of films and series that deserve a second (or third!) viewing. These are not just favorites — they are timeless rewatchables curated by Serkan himself. Perfect for movie nights, nostalgic weekends, or discovering gems worth looping forever.",
+  name: "Serkan'ın izlenecek film ve diziler listesi",
+  description: `🎯 İzlenmeye değer olduğu düşünülen filmler ve diziler burada!! 
+`,
   logo: "https://raw.githubusercontent.com/serkansu/cineselect-addon/main/cineselect-logo.png",
   resources: ["catalog"],
   types: ["movie", "series"],
@@ -52,7 +53,7 @@ const manifest = {
     {
       type: "movie",
       id: "serkan-watchagain-movies",
-      name: "🎬 Serkan's Watch Again Movies",
+      name: "🎬 Serkan'ın İzlenecek Filmleri",
       extra: [
         {
           name: "year",
@@ -78,7 +79,7 @@ const manifest = {
     {
       type: "series",
       id: "serkan-watchagain-series",
-      name: "📺 Serkan's Watch Again Series",
+      name: "📺 Serkan'ın İzlenecek Dizileri",
       extra: [
         {
           name: "year",
