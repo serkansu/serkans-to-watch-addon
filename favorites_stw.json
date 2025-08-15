@@ -1,0 +1,204 @@
+{
+    "movies": [
+        {
+            "type": "movie",
+            "cineselectRating": 50,
+            "imdb": "tt0099685",
+            "id": "tmdb769",
+            "title": "GoodFellas",
+            "year": "1990",
+            "rt": 94,
+            "poster": "https://image.tmdb.org/t/p/w500/aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg",
+            "imdbRating": 8.7
+        },
+        {
+            "type": "movie",
+            "cineselectRating": 20,
+            "imdb": "tt0317248",
+            "id": "tmdb598",
+            "title": "City of God",
+            "rt": 91,
+            "year": "2002",
+            "poster": "https://image.tmdb.org/t/p/w500/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+            "imdbRating": 8.6
+        },
+        {
+            "type": "movie",
+            "cineselectRating": 50,
+            "imdb": "tt0054215",
+            "id": "tmdb539",
+            "title": "Psycho",
+            "year": "1960",
+            "rt": 97,
+            "poster": "https://image.tmdb.org/t/p/w500/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
+            "imdbRating": 8.5
+        },
+        {
+            "type": "movie",
+            "cineselectRating": 80,
+            "imdb": "tt0246578",
+            "id": "tmdb141",
+            "title": "Donnie Darko",
+            "rt": 88,
+            "year": "2001",
+            "poster": "https://image.tmdb.org/t/p/w500/fhQoQfejY1hUcwyuLgpBrYs6uFt.jpg",
+            "imdbRating": 8.0
+        },
+        {
+            "cineselectRating": 32,
+            "type": "movie",
+            "imdb": "tt16311594",
+            "id": "tmdb911430",
+            "title": "F1",
+            "rt": 83,
+            "year": "2025",
+            "poster": "https://image.tmdb.org/t/p/w500/9JePWGvgg1t4BOojyZEVQdOWjXO.jpg",
+            "imdbRating": 7.9
+        },
+        {
+            "type": "movie",
+            "cineselectRating": 19,
+            "imdb": "tt5950044",
+            "id": "tmdb1061474",
+            "title": "Superman",
+            "rt": 83,
+            "year": "2025",
+            "poster": "https://image.tmdb.org/t/p/w500/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
+            "imdbRating": 7.6
+        },
+        {
+            "type": "movie",
+            "cineselectRating": 50,
+            "imdb": "tt4550098",
+            "id": "tmdb340666",
+            "title": "Nocturnal Animals",
+            "year": "2016",
+            "rt": 74,
+            "poster": "https://image.tmdb.org/t/p/w500/mdLDgQBD0va09npSQX5Zgo2evXM.jpg",
+            "imdbRating": 7.4
+        },
+        {
+            "type": "movie",
+            "cineselectRating": 50,
+            "imdb": "tt0117571",
+            "id": "tmdb4232",
+            "title": "Scream",
+            "year": "1996",
+            "rt": 78,
+            "poster": "https://image.tmdb.org/t/p/w500/lr9ZIrmuwVmZhpZuTCW8D9g0ZJe.jpg",
+            "imdbRating": 7.4
+        },
+        {
+            "cineselectRating": 24,
+            "type": "movie",
+            "imdb": "tt17526714",
+            "id": "tmdb933260",
+            "title": "The Substance",
+            "rt": 89,
+            "year": "2024",
+            "poster": "https://image.tmdb.org/t/p/w500/q6HjZlvyKxYmhlRhnnxeyudzK9A.jpg",
+            "imdbRating": 7.2
+        },
+        {
+            "type": "movie",
+            "cineselectRating": 21,
+            "imdb": "tt30253473",
+            "id": "tmdb1136867",
+            "title": "Materialists",
+            "rt": 79,
+            "year": "2025",
+            "poster": "https://image.tmdb.org/t/p/w500/eDo0pNruy0Qgj6BdTyHIR4cxHY8.jpg",
+            "imdbRating": 6.7
+        },
+        {
+            "cineselectRating": 37,
+            "type": "movie",
+            "imdb": "tt13397574",
+            "id": "tmdb758679",
+            "title": "Mothers' Instinct",
+            "rt": 54,
+            "year": "2024",
+            "poster": "https://image.tmdb.org/t/p/w500/6EtPToJlGpjyuIxkIoztnBXYFgJ.jpg",
+            "imdbRating": 6.3
+        },
+        {
+            "cineselectRating": 23,
+            "type": "movie",
+            "imdb": "tt21261712",
+            "id": "tmdb998846",
+            "title": "Back to Black",
+            "rt": 35,
+            "year": "2024",
+            "poster": "https://image.tmdb.org/t/p/w500/xHQEeUT3Ac4fTY72UeNrI75xLtE.jpg",
+            "imdbRating": 6.3
+        },
+        {
+            "cineselectRating": 50,
+            "type": "movie",
+            "imdb": "tt0418819",
+            "id": "tmdb11683",
+            "title": "Land of the Dead",
+            "rt": 75,
+            "year": "2005",
+            "poster": "https://image.tmdb.org/t/p/w500/xxp0qcZ3n2YA53SIzWilDSfIaA4.jpg",
+            "imdbRating": 6.2
+        },
+        {
+            "cineselectRating": 38,
+            "type": "movie",
+            "imdb": "tt23137390",
+            "id": "tmdb1041613",
+            "title": "Immaculate",
+            "rt": 71,
+            "year": "2024",
+            "poster": "https://image.tmdb.org/t/p/w500/zyopv7D5j7cfswG0NYiA14qAdPC.jpg",
+            "imdbRating": 5.8
+        },
+        {
+            "cineselectRating": 38,
+            "type": "movie",
+            "imdb": "tt14088510",
+            "id": "tmdb719221",
+            "title": "Tarot",
+            "rt": 17,
+            "year": "2024",
+            "poster": "https://image.tmdb.org/t/p/w500/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg",
+            "imdbRating": 4.8
+        },
+        {
+            "cineselectRating": 36,
+            "type": "movie",
+            "imdb": "tt33244668",
+            "id": "tmdb1234731",
+            "title": "Anaconda",
+            "rt": 0,
+            "year": "2025",
+            "poster": "https://image.tmdb.org/t/p/w500/2bODra2LLMwY655emv6znwiGSfz.jpg",
+            "imdbRating": 0.0
+        },
+        {
+            "cineselectRating": 35,
+            "type": "movie",
+            "imdb": "",
+            "id": "tmdb1298628",
+            "title": "Nocturnal Animals",
+            "rt": 0,
+            "year": "2024",
+            "poster": "https://image.tmdb.org/t/p/w500/nT0vAGkdq0Gm066Eac4dz05bf9A.jpg",
+            "imdbRating": 0.0
+        }
+    ],
+    "series": [
+        {
+            "type": "show",
+            "cineselectRating": 35,
+            "imdb": "tt1751634",
+            "id": "tmdb90802",
+            "title": "The Sandman",
+            "imdbRating": 7.7,
+            "year": "2022",
+            "poster": "https://image.tmdb.org/t/p/w500/vfJ1nBnqiiRWZWv3ZvtFWO5zccg.jpg",
+            "rt": 0
+        }
+    ]
+}
