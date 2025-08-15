@@ -2,19 +2,19 @@ const { addonBuilder, serveHTTP } = require("stremio-addon-sdk");
 const fs = require("fs");
 const path = require("path");
 
-// YALNIZCA BU REPODAKI (yerel) favorites.json okunur; baska repodan veri cekilmez.
-// favorites.json verilerini oku
+// YALNIZCA BU REPODAKI (yerel) favorites_stw.json okunur; baska repodan veri cekilmez.
+// favorites_stw.json verilerini oku
 let movieList = [];
 let seriesList = [];
 try {
-  const data = fs.readFileSync(path.join(__dirname, "favorites.json"), "utf8");
+  const data = fs.readFileSync(path.join(__dirname, "favorites_stw.json"), "utf8");
   const parsed = JSON.parse(data);
   movieList = parsed.movies || [];
   seriesList = parsed.series || [];
   console.log(`🎬 ${movieList.length} movies, 📺 ${seriesList.length} series loaded.`);
-  console.log("📄 favorites.json source dir:", __dirname);
+  console.log("📄 favorites_stw.json source dir:", __dirname);
 } catch (err) {
-  console.error("favorites.json okunamadı:", err);
+  console.error("favorites_stw.json okunamadı:", err);
 }
 
 // Helper functions to extract years and build extras
@@ -43,18 +43,18 @@ function yearsToSortOptions(yearsArr) {
 }
 
 const manifest = {
-  id: "community.serkanswatchagain",
+  id: "community.serkans_to_watch",
   version: "1.0.1",
   name: "Serkan'ın izlenecek film ve diziler listesi",
   description: `🎯 İzlenmeye değer olduğu düşünülen filmler ve diziler burada!! 
 `,
-  logo: "https://raw.githubusercontent.com/serkansu/serkans-to-watch-addon/main/cineselect-logo.png",
+  logo: "https://raw.githubusercontent.com/serkansu/serkans-to-watch-addon/main/stw-logo.png",
   resources: ["catalog"],
   types: ["movie", "series"],
   catalogs: [
     {
       type: "movie",
-      id: "serkan-watchagain-movies",
+      id: "stw_movies",
       name: "🎬 Serkan'ın İzlenecek Filmleri",
       extra: [
         {
@@ -80,7 +80,7 @@ const manifest = {
     },
     {
       type: "series",
-      id: "serkan-watchagain-series",
+      id: "stw_series",
       name: "📺 Serkan'ın İzlenecek Dizileri",
       extra: [
         {
@@ -196,7 +196,7 @@ builder.defineCatalogHandler((args) => {
     return filtered;
   }
 
-  if (args.id === "serkan-watchagain-movies") {
+  if (args.id === "stw_movies") {
     const sorted = getSortedFiltered(movieList, "movie");
     const metas = sorted
       .slice(skip, skip + limit)
@@ -221,7 +221,7 @@ builder.defineCatalogHandler((args) => {
     return Promise.resolve({ metas });
   }
 
-  if (args.id === "serkan-watchagain-series") {
+  if (args.id === "stw_series") {
     const sorted = getSortedFiltered(seriesList, "series");
     const metas = sorted
       .slice(skip, skip + limit)
